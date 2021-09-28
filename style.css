@@ -1,0 +1,210 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    background-color: #b57d289f;
+    height: 120px;
+    display: flex;
+    border-radius: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #b57d289f;
+    padding: 10px;
+    height: 120px;
+    display: flex;
+    border-radius: 25px;
+}
+
+
+#logo {
+    float: left;
+    margin: auto;
+    margin-left: 24%;
+    width: 100px;
+    height: 100px;
+}
+
+.name-box {
+    margin: auto;
+    padding-right: 50%;
+}
+
+#main-aside-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.table,
+.navigation,
+.list,
+.form {
+    max-width: 960px;
+    width: 100%;
+    background-color: #b57d289f;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.navigation {
+    order: 1;
+}
+
+.table {
+
+    order: 3;
+}
+
+
+.list {
+    order: 2;
+}
+
+.form {
+    order: 4;
+}
+
+.navigation-list {
+    width: 100%;
+}
+
+.navigation-list,
+.li {
+    font-size: 20px;
+    padding: 0 8%;
+    display: inline-block;
+}
+
+.flexible-image {
+    max-width: 100%;
+}
+
+.even-number {
+    background-color: pink;
+}
+
+.odd-number {
+    background-color: silver;
+}
+
+.footer-author {
+    margin: auto;
+    font-size: 24px;
+}
+
+@media screen and (max-width:1200px) {
+
+    .navigation,
+    .list,
+    .form {
+        width: 1140px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .table,
+    .navigation,
+    .list,
+    .form {
+        display: block;
+        width: 960px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .table,
+    .navigation,
+    .list,
+    .form {
+        width: 720px;
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .table,
+    .navigation,
+    .list,
+    .form {
+        width: 540px;
+    }
+
+
+
+}
+
+@media screen and (max-width:575px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .table,
+    .navigation,
+    .list,
+    .form {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .navigation-list,
+    .li {
+        padding: 0 2%;
+    }
+
+    .form {
+        order: 3;
+    }
+
+    .table {
+        order: 4;
+    }
+}
